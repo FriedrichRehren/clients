@@ -10,6 +10,7 @@ export class OrganizationUserResponse implements BaseResponse {
   id: string;
   email: string;
   name: string | undefined;
+  externalId: string | undefined;
   status: OrganizationUserStatusType;
   type: OrganizationUserType;
   twoFactorEnabled: boolean;
@@ -18,6 +19,7 @@ export class OrganizationUserResponse implements BaseResponse {
     id: string;
     email: string;
     name: string | undefined;
+    externalId: string | undefined;
     status: OrganizationUserStatusType;
     type: OrganizationUserType;
     twoFactorEnabled: boolean;
@@ -26,6 +28,7 @@ export class OrganizationUserResponse implements BaseResponse {
     this.id = c.id;
     this.email = c.email;
     this.name = c.name;
+    this.externalId = c.externalId;
     this.status = c.status;
     this.type = c.type;
     this.twoFactorEnabled = c.twoFactorEnabled;

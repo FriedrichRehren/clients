@@ -290,6 +290,7 @@ export class ListCommand {
               id: r.id,
               email: r.email,
               name: r.name,
+              externalId: r.externalId,
               status: r.status,
               type: r.type,
               twoFactorEnabled: r.twoFactorEnabled,
